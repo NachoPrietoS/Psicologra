@@ -126,10 +126,21 @@ main .isapres h2{
 main .isapres{
     font-family: "Roboto Condensed", sans-serif;
     font-style: italic;
+    text-align: center;
+    color: #4b389c;
+}
+
+main section .contenedorIsapres{
+    margin: 0px 20px;
+    padding: 50px 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 50px;
 }
 
 main .isapres div img{
-    width: 9%;
+    width: 50%;
 }
 
 /* ------ Estilos Staff ------ */
@@ -215,13 +226,13 @@ footer div ul a img{
 }
 
 /* ---- MediaQuery ------ */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
 
-    .servicios{
+    main .servicios{
         height: 920px;
     }
 
-    section .contenedorTerapias{
+    main section .contenedorTerapias{
         margin: 0 20px;
         height: 100%;
         display: grid;
@@ -231,11 +242,20 @@ footer div ul a img{
         column-gap: 5px;
     }
 
-    section .contenedorTerapias .terapia .headTerapia{
+    main section .contenedorTerapias .terapia .headTerapia{
         padding: 5px;
     }
 
-    section .contenedorTerapias .terapia .promTerapia{
+    main section .contenedorTerapias .terapia .promTerapia{
         padding: 10px;
+    }
+
+    main section .contenedorIsapres{
+        margin: 0px 20px;
+        padding: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 15px;
+        text-align: center;
     }
 }
