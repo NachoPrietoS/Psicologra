@@ -23,14 +23,14 @@ header div nav div a img{
 }
 
 /* ----- Estilos Index ------ */
-H1{
+h1{
     text-align: center;
     color: #4b389c;
     padding: 20px;
     margin: 0;
 }
 
-.slide{
+main .slide{
     margin: 10px;
 }
 
@@ -39,43 +39,54 @@ div .carousel-inner div img{
     border-radius: 10px;
 }
 
-.contenMessage{
-    margin: 15px;
+main .contenMessage{
+    margin: 25px;
     text-align: center;
     font-size: large;
     font-style: oblique;
 }
 
-.indexH2{
+main .indexH2{
     text-align: center;
     color: #4b389c;
-    margin: 25px;
+    margin: 25px 10px 10px 10px;
 }
 
-section div .step{
+main section .stepProcess{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 31%);
+    padding: 25px 10px;
+    justify-content: space-evenly;
+}
+
+main section div .step{
     text-align: center;
-    padding: 60px;
-    margin: 15px 50px 35px 50px;
     border-radius: 40px;
     border-color: #221947;
     border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
 }
 
-section div .step h6{
+main section div .step div h6{
     font-size: medium;
     color: #4b389c;
     text-align: center;
-    margin: 5px;
-    border-radius: 10px;
+    border-radius: 30px;
     border-color: #4b389c;
     border-style: dashed;
+    padding: 10px;
 }
 
-section div .step h5{
+main section div .step div h5{
     font-size: large;
     color: #4b389c;
     text-decoration: underline;
     margin: 0;
+    font-style: italic;
 }
 
 /* ------ Estilos Servicios ------ */
@@ -88,7 +99,7 @@ main .bannerServicio img{
     border-radius: 10px;
 }
 
-section .contenedorTerapias{
+main section .contenedorTerapias{
     margin: 30px 30px;
     text-align: center;
     display: grid;
@@ -97,7 +108,7 @@ section .contenedorTerapias{
     column-gap: 60px;
 }
 
-section .contenedorTerapias .terapia .headTerapia{
+main section .contenedorTerapias .terapia .headTerapia{
     background-color: cornflowerblue;
     color: antiquewhite;
     padding: 10px;
@@ -105,16 +116,16 @@ section .contenedorTerapias .terapia .headTerapia{
     border-top-right-radius: 30px;
 }
 
-section .contenedorTerapias .terapia .headTerapia p{
+main section .contenedorTerapias .terapia .headTerapia p{
     margin: 0;
 }
 
-section .contenedorTerapias .terapia .promTerapia{
+main section .contenedorTerapias .terapia .promTerapia{
     background-color: azure;
     padding: 20px;
 }
 
-section .contenedorTerapias div div ul{
+main section .contenedorTerapias div div ul{
     list-style: none;
     padding: 0;
 }
@@ -144,7 +155,12 @@ main .isapres div img{
 }
 
 /* ------ Estilos Staff ------ */
-
+main .staffComent{
+    margin: 20px;
+    text-align: center;
+    font-size: large;
+    font-style: oblique;
+}
 
 /* ------ Estilos FAQ ------ */
 main .video{
@@ -227,6 +243,24 @@ footer div ul a img{
 
 /* ---- MediaQuery ------ */
 @media screen and (max-width: 576px) {
+
+    main section .stepProcess{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 30%);
+        row-gap: 25px;
+        margin: 0 55px;
+        padding: 5px 0 25px 0;
+    }
+
+    main section .stepProcess .step{
+        padding: 25px;
+    }
+
+    main section .stepProcess .step .stepNumber h6{
+        padding: 10px;
+        margin: 5px;
+    }
 
     main .servicios{
         height: 920px;
