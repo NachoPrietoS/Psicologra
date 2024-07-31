@@ -39,7 +39,7 @@ div .carousel-inner div img{
     border-radius: 10px;
 }
 
-main .contenMessage{
+main section .contenMessage{
     margin: 25px;
     text-align: center;
     font-size: large;
@@ -54,8 +54,8 @@ main .indexH2{
 
 main section .stepProcess{
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 31%);
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    column-gap: 15px;
     padding: 25px 10px;
     justify-content: space-evenly;
 }
@@ -63,12 +63,12 @@ main section .stepProcess{
 main section div .step{
     text-align: center;
     border-radius: 40px;
-    border-color: #221947;
-    border-style: solid;
+    background-color: rgba(220, 245, 250, 0.709);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 25px;
+    box-shadow: -5px -5px 5px #888888;
 }
 
 main section div .step div h6{
@@ -77,7 +77,7 @@ main section div .step div h6{
     text-align: center;
     border-radius: 30px;
     border-color: #4b389c;
-    border-style: dashed;
+    border-style: double;
     padding: 10px;
 }
 
@@ -103,9 +103,10 @@ main section .contenedorTerapias{
     margin: 30px 30px;
     text-align: center;
     display: grid;
-    grid-template-rows: 40%;
+    grid-template-rows: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 60px;
+    flex-wrap: nowrap
 }
 
 main section .contenedorTerapias .terapia .headTerapia{
@@ -120,7 +121,7 @@ main section .contenedorTerapias .terapia .headTerapia p{
     margin: 0;
 }
 
-main section .contenedorTerapias .terapia .promTerapia{
+main section .contenedorTerapias .terapia .bodyTerapia{
     background-color: azure;
     padding: 20px;
 }
@@ -128,6 +129,18 @@ main section .contenedorTerapias .terapia .promTerapia{
 main section .contenedorTerapias div div ul{
     list-style: none;
     padding: 0;
+}
+
+main section .contenedorTerapias div .btnReserva button{
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.394);
+}
+
+main section .contenedorTerapias div .btnReserva a{
+    text-decoration: none;
+    color: black;
 }
 
 main .isapres h2{
@@ -142,7 +155,7 @@ main .isapres{
 }
 
 main section .contenedorIsapres{
-    margin: 0px 20px;
+    margin-inline: 20px;
     padding: 50px 0;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -267,20 +280,20 @@ footer div ul a img{
     }
 
     main section .contenedorTerapias{
-        margin: 0 20px;
+        margin: 0 25px;
         height: 100%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 30%);
         text-align: center;
-        column-gap: 5px;
+        column-gap: 10px;
     }
 
     main section .contenedorTerapias .terapia .headTerapia{
         padding: 5px;
     }
 
-    main section .contenedorTerapias .terapia .promTerapia{
+    main section .contenedorTerapias .terapia .bodyTerapia{
         padding: 10px;
     }
 
