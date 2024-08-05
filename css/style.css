@@ -17,6 +17,9 @@ header{
     top: 0px;
     z-index: 100;
 }
+header div nav div div ul li .menu{
+    color: whitesmoke;
+}
 
 header div nav div a img{
     height: 50px;
@@ -138,6 +141,12 @@ main section .contenedorTerapias div .btnReserva button{
     background-color: rgba(128, 128, 128, 0.394);
 }
 
+main section .contenedorTerapias div .btnReserva button:hover{
+    border: 1px solid black;
+    background-color: rgba(79, 77, 77, 0.394);
+    text-decoration: underline;
+}
+
 main section .contenedorTerapias div .btnReserva a{
     text-decoration: none;
     color: black;
@@ -179,7 +188,7 @@ main .contenedorStaff{
     height: 600px;
     margin-inline: 45px;
     display: flex;
-    gap: 50px;
+    gap: 15%;
     text-align: center;
 }
 
@@ -209,19 +218,44 @@ main .contenedorStaff .psicologo .infoPsico div h3{
 }
 
 /* ------ Estilos FAQ ------ */
-main .video{
-    text-align: center;
+main .containerVideo{
+    display: flex;
+    justify-content: center;
 }
 
-main .faq{
-    text-align: center;
+main .containerVideo .video{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+main .contenedorFaq{
+    width: 75%;
+    padding: 40px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 main .question{
-    text-decoration-line: underline;
-    font-style: italic;
-    font: bold;
-    font-size: 150%;
+    background-color: #7b5df9;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+}
+main .question:hover{
+    font-size: larger;
+}
+
+main .answer{
+    background-color: aliceblue;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px;
 }
 
 /* ------ Estilos Contacto ------ */
@@ -362,6 +396,10 @@ footer div ul a img{
 
     main .contenedorStaff .psicologo .infoPsico{
         padding: 10px;
+    }
+
+    main .contenedorFaq{
+        width: 90%;
     }
 
 }
