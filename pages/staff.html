@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS -->
@@ -20,21 +22,21 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand">
-                        <img src="../image/Testlogo.png" alt="Logo Psicologra">
+                        <img src="../image/Testlogo.png" alt="Logo Psicologra" class="animate__animated animate__fadeInRight">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link menu" href="../index.html">Home</a>
+                                <a class="nav-link menu" aria-current="page" href="../index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link menu" href="./servicios.html">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./staff.html">Staff</a>
+                                <a class="nav-link active menu" href="./staff.html">Staff</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link menu" href="./faq.html">FAQ</a>
@@ -51,7 +53,7 @@
     <!-- Fin header -->
     <main class="staff">
         <!-- Titulo y texto -->
-        <h1>Nuestro Staff de Psicología</h1>
+        <h1 class="staffH1">Nuestro Staff de Psicología</h1>
         <div class="staffComent">
             <p>En <span>Psicologra</span>, estamos comprometidos a ofrecerte el mejor apoyo y orientación para tu bienestar emocional. Nuestro equipo de psicólogos está compuesto por profesionales altamente capacitados y apasionados por su trabajo, cada uno con una sólida formación y experiencia en diversas áreas de la psicología.
             <br>
@@ -61,16 +63,16 @@
         </div>
         <!-- Fin Titulo y texto -->
         <!-- Staff -->
-        <section class="contenedorStaff">
-            <div class="psicologo">
+        <section class="containerStaff">
+            <div class="psicologo animate__animated animate__fadeInTopLeft">
                 <div class="imgPsico">
                     <img src="../image/Staff/Psicologoxx.jpeg" alt="Psicologo XX">
                 </div>
                 <div class="infoPsico">
-                    <div>
+                    <div class="namePsico">
                         <h2>Nombre Psicologo XX</h2>
                     </div>
-                    <div>
+                    <div class="certPsico">
                         <h3>Triple Magister de Psilogia en Harvard</h3>
                     </div>
                 </div>
@@ -78,15 +80,15 @@
                     <p>¡Hola y bienvenido/a!<br> Soy [Nombre del Psicólogo]. Estoy aquí para ofrecerte apoyo y guía en tu camino hacia el bienestar emocional. Si necesitas ayuda o simplemente quieres hablar, no dudes en contactarme para programar una consulta.<br> ¡Estoy aquí para ayudarte!</p>
                 </div>
             </div>
-            <div class="psicologo">
+            <div class="psicologo animate__animated animate__fadeInTopRight">
                 <div class="imgPsico">
                     <img src="../image/Staff/Psicologozz.jpeg" alt="Psicologo ZZ">
                 </div>
                 <div class="infoPsico">
-                    <div>
+                    <div class="namePsico">
                         <h2>Nombre Psicologo ZZ</h2>
                     </div>
-                    <div>
+                    <div class="certPsico">
                         <h3>Titulado en Psicologia</h3>
                     </div>
                 </div>

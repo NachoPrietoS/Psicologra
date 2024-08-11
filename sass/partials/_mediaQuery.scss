@@ -1,0 +1,120 @@
+/* mediaquery Pages */
+@media screen and (max-width: 576px) {
+    /* Header */
+    header{
+        div {
+            nav{
+                div{
+                    div{
+                        ul{
+                            li{
+                                .menu{
+                                    &:hover{
+                                        color: rgb(95, 95, 199);
+                                        background-color: $secundaryColor;
+                                        border-radius: 5px;
+                                        transform: scale(1.0, 1.0);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Index */
+    section .contenMessage{
+        margin: 50px 25px;
+        .message{
+            text-align: justify;
+        }
+    }
+    .indexH2{
+        padding-bottom: 20px;
+    }
+
+    section{
+        .stepProcess{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 30%);
+            row-gap: 25px;
+            margin: 0 55px;
+            padding: 5px 0 25px 0;
+            .step{
+                padding: 25px;
+                .stepNumber{
+                    h6{
+                        padding: 10px;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Servicios */
+    .servicios{
+        height: 920px;
+        .containerTerapias{
+            margin: 0 25px;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 30%);
+            text-align: center;
+            column-gap: 10px;
+            .terapia{
+                .headTerapia{
+                    padding: 5px;
+                }
+                .bodyTerapia{
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    .isapres{
+        .containerIsapres{
+            margin: 0px 20px;
+            padding: 15px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 15px;
+            text-align: center;
+        }
+    }
+    
+    /* Staff */
+    .containerStaff{
+        margin-inline: 15px;
+        padding-bottom: 35px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .psicologo{
+            margin-inline: 5px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .imgPsico{
+                img{
+                    border-radius: 200px;
+                    object-fit: cover;
+                }
+            }
+            .infoPsico{
+                padding: 10px;
+            }
+        }
+    }
+
+    /* FAQ */
+    .containerFaq{
+        width: 90%;
+    }
+}
