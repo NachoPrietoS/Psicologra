@@ -84,19 +84,20 @@ footer .row .redesSociales ul img:hover {
 
 /* Estilo general Main */
 main {
-  background-image: url(../../image/stacked-waves-haikei.png);
+  background-image: url(../../image/Background/stacked-waves-haikei.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  font-family: "Lato", sans-serif;
 }
 
 /* Estilos Index */
 .indexH1 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: italic;
   text-align: center;
-  color: #7b5df9;
-  padding: 20px;
-  margin: 0;
+  font-size: 40px;
 }
 
 .slide {
@@ -108,16 +109,16 @@ main {
 }
 
 section .contenMessage {
-  margin: 50px 100px;
+  margin: 50px 60px;
   text-align: center;
   font-size: large;
-  font-style: oblique;
 }
 
 .indexH2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: italic;
   text-align: center;
-  color: #7b5df9;
-  margin: 25px 10px 10px 10px;
+  font-size: 40px;
 }
 
 section .stepProcess {
@@ -167,7 +168,7 @@ section h1 {
   font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
   text-align: center;
-  color: #4b389c;
+  font-size: 40px;
 }
 section .containerTerapias {
   margin: 30px 30px;
@@ -217,7 +218,7 @@ section .isapreH2 {
   font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
   text-align: center;
-  color: #4b389c;
+  font-size: 35px;
 }
 section .containerIsapres {
   margin-inline: 20px;
@@ -243,7 +244,7 @@ section .containerIsapres .isapre img:hover {
   font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
   text-align: center;
-  color: #4b389c;
+  font-size: 40px;
 }
 
 .staffComent {
@@ -290,7 +291,7 @@ section .containerIsapres .isapre img:hover {
   font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
   text-align: center;
-  color: #4b389c;
+  font-size: 40px;
 }
 
 .containerVideo {
