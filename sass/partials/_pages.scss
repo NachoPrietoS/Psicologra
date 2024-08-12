@@ -172,7 +172,10 @@ section{
     margin: 30px;
     text-align: center;
     font-size: large;
-    font-style: oblique;
+    font-style: italic;
+    .msgMobile{
+        display: none;
+    }
     span{
         color: red;
     }

@@ -251,7 +251,10 @@ section .containerIsapres .isapre img:hover {
   margin: 30px;
   text-align: center;
   font-size: large;
-  font-style: oblique;
+  font-style: italic;
+}
+.staffComent .msgMobile {
+  display: none;
 }
 .staffComent span {
   color: red;
@@ -461,6 +464,12 @@ section .containerIsapres .isapre img:hover {
     text-align: center;
   }
   /* Staff */
+  .staffComent .msgDesktop {
+    display: none;
+  }
+  .staffComent .msgMobile {
+    display: block;
+  }
   .containerStaff {
     margin-inline: 15px;
     padding-bottom: 35px;
