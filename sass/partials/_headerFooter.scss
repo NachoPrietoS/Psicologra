@@ -18,9 +18,11 @@ header{
                 div{
                     ul{
                         li{
+                            padding-right: 25px;
                             .menu{
-                                color: whitesmoke;
+                                color: $secundaryColor;
                                 font-style: italic;
+                                font-size: large;
                                 &:hover{
                                     color: rgb(95, 95, 199);
                                     background-color: $secundaryColor;
@@ -42,7 +44,7 @@ footer{
     font-family: "Roboto Condensed", sans-serif;
     font-style: italic;
     font-size: large;
-    color: whitesmoke;
+    color: $secundaryColor;
     height: 80px;
     width: 100%;
     display: flex;
