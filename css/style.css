@@ -101,14 +101,9 @@ main {
 }
 
 .slide {
-  margin: 0 25px;
-  height: 600px;
-  overflow: hidden;
+  margin: 0 50px;
   border-radius: 25px;
-}
-.slide .carousel-inner div img {
-  height: 100%;
-  object-fit: cover;
+  overflow: hidden;
 }
 
 section .contenMessage {
@@ -415,6 +410,11 @@ section .containerIsapres .isapre img:hover {
     transform: scale(1, 1);
   }
   /* Index */
+  .slide {
+    margin: 0 20px;
+    border-radius: 25px;
+    overflow: hidden;
+  }
   section .contenMessage {
     margin: 50px 25px;
   }
