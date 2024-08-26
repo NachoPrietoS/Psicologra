@@ -1,5 +1,145 @@
 /* mediaquery Pages */
+/* Mediaquery Tablet */
+@media screen and (max-width: 768px){
+    main{
+        background-color: yellow;
+    }
+    /* Header */
+    header{
+        div {
+            nav{
+                div{
+                    div{
+                        ul{
+                            li{
+                                .menu{
+                                    &:hover{
+                                        color: rgb(95, 95, 199);
+                                        background-color: $secundaryColor;
+                                        border-radius: 5px;
+                                        transform: scale(1.0, 1.0);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Index */
+    section{
+        .contenMessage{
+            margin: 30px 30px;
+            .message{
+                text-align: justify;
+            }
+        }
+    }
+    section{
+        .stepProcess{
+            margin: 0 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+        }
+    }
+
+    /* Servicios */
+    .servicios{
+        .containerTerapias{
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+            .terapia{
+                .headTerapia{
+                    h2{
+                        margin: 0;
+                    }
+                }
+                .bodyTerapia{
+                    padding: 10px 5px;
+                }
+            }
+        }
+    }
+    .isapres{
+        h2{
+            margin: 0;
+        }
+        .containerIsapres{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            .isapre{
+                img{
+                    width: 75%;
+                }
+            }
+            :nth-child(8){
+                grid-column: 3/4;
+            }
+        }
+    }
+    /* Staff */
+    .staffH1{
+        margin: 0;
+    }
+    .staffComent{
+        text-align: justify;
+        .msgDesktop{
+            display: none;
+        }
+        .msgMobile{
+            display: inline-block;
+            margin: 0;
+        }
+    }
+    .containerStaff{
+        display: flex;
+        gap: 25px;
+        margin-inline: 20px;
+    }
+
+    /* FAQ */
+    .faqH1{
+        margin: 0;
+    }
+    .containerFaq{
+        width: 100%;
+    }
+
+    /* Contacto */
+    .containerForm{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        .messageForm{
+            h2{
+                margin: 0;
+                padding: 20px;
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+    .containerMapa{
+        gap: 0;
+        .consejoMapa{
+            p{
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+
+/* MediaQuery Mobile */
 @media screen and (max-width: 576px) {
+    main{
+        background-color: aqua;
+    }
     /* Header */
     header{
         div {
@@ -31,13 +171,16 @@
         overflow: hidden;
     }
 
-    section .contenMessage{
-        margin: 50px 25px;
-        .message{
-            text-align: justify;
+    section {
+        .contenMessage{
+            margin: 50px 25px;
+            .message{
+                text-align: justify;
+            }
         }
     }
     .indexH2{
+        margin: 20px;
         padding-bottom: 20px;
     }
 
@@ -85,12 +228,17 @@
 
     .isapres{
         .containerIsapres{
-            margin: 0px 20px;
-            padding: 15px 0;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            row-gap: 15px;
             text-align: center;
+            .isapre{
+                img{
+                    width: 75%;
+                }
+            }
+            :nth-child(8){
+                grid-column: 2/3;
+            }
         }
     }
     
@@ -109,9 +257,9 @@
         height: auto;
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 25px;
         .psicologo{
-            margin-inline: 5px;
+            margin-inline: 15px;
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -128,7 +276,10 @@
     }
 
     /* FAQ */
+    .faqH1{
+        margin: 0;
+    }
     .containerFaq{
-        width: 90%;
+        width: 95%;
     }
 }

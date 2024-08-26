@@ -21,14 +21,15 @@ header div nav div div ul li {
   padding-right: 25px;
 }
 header div nav div div ul li .menu {
-  color: #F5F5F5;
+  color: #ffffff;
   font-style: italic;
   font-size: large;
 }
 header div nav div div ul li .menu:hover {
   color: rgb(95, 95, 199);
-  background-color: #F5F5F5;
-  border-radius: 25px;
+  background-color: #ffffff;
+  font-size: larger;
+  border-radius: 15px;
   transform: scale(1.1, 1.1);
 }
 
@@ -38,7 +39,7 @@ footer {
   font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
   font-size: large;
-  color: #F5F5F5;
+  color: #ffffff;
   height: 80px;
   width: 100%;
   display: flex;
@@ -72,9 +73,9 @@ footer .row .redesSociales ul {
   height: 100%;
   width: 50%;
   padding: 0;
+  display: flex;
   align-content: center;
   justify-content: space-evenly;
-  display: flex;
 }
 footer .row .redesSociales ul .RRSS {
   align-content: center;
@@ -101,7 +102,10 @@ main {
   font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
   text-align: center;
-  font-size: 40px;
+  font-weight: 900;
+  padding: 25px;
+  margin: 0;
+  color: #004256;
 }
 
 .slide {
@@ -115,12 +119,18 @@ section .contenMessage {
   text-align: center;
   font-size: large;
 }
+section .contenMessage span {
+  color: red;
+  text-decoration: underline;
+  font-weight: 800;
+}
 
 .indexH2 {
   font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
   text-align: center;
-  font-size: 40px;
+  font-weight: 700;
+  color: #004256;
 }
 
 section .stepProcess {
@@ -170,7 +180,10 @@ section h1 {
   font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
   text-align: center;
-  font-size: 40px;
+  font-weight: 900;
+  margin: 0;
+  padding: 15px 0 0 0;
+  color: #004256;
 }
 section .containerTerapias {
   margin: 30px 30px;
@@ -220,7 +233,9 @@ section .isapreH2 {
   font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
   text-align: center;
-  font-size: 35px;
+  font-weight: 900;
+  color: #004256;
+  margin: 0;
 }
 section .containerIsapres {
   margin-inline: 20px;
@@ -234,7 +249,7 @@ section .containerIsapres .isapre {
   text-align: center;
 }
 section .containerIsapres .isapre img {
-  width: 50%;
+  width: 60%;
   text-align: center;
 }
 section .containerIsapres .isapre img:hover {
@@ -246,7 +261,10 @@ section .containerIsapres .isapre img:hover {
   font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
   text-align: center;
-  font-size: 40px;
+  font-weight: 900;
+  color: #004256;
+  margin: 0;
+  padding: 30px 0 0 0;
 }
 
 .staffComent {
@@ -260,13 +278,14 @@ section .containerIsapres .isapre img:hover {
 }
 .staffComent span {
   color: red;
+  font-weight: 800;
 }
 
 .containerStaff {
   height: 600px;
   margin-inline: 45px;
   display: flex;
-  gap: 50px;
+  gap: 100px;
   text-align: center;
 }
 .containerStaff .psicologo {
@@ -296,7 +315,10 @@ section .containerIsapres .isapre img:hover {
   font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
   text-align: center;
-  font-size: 40px;
+  font-weight: 900;
+  color: #004256;
+  margin: 0;
+  padding: 25px;
 }
 
 .containerVideo {
@@ -310,7 +332,7 @@ section .containerIsapres .isapre img:hover {
 }
 
 .containerFaq {
-  width: 75%;
+  width: 90%;
   padding: 40px;
   margin: auto;
   margin-top: 20px;
@@ -344,10 +366,9 @@ section .containerIsapres .isapre img:hover {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .containerForm .messageForm {
-  background-color: rgb(223, 218, 218);
   width: 500px;
   padding: 20px;
   border-radius: 20px;
@@ -357,13 +378,13 @@ section .containerIsapres .isapre img:hover {
   text-align: center;
 }
 .containerForm .messageForm h2 {
-  color: rgb(250, 248, 248);
-  text-shadow: 5px 5px 5px rgb(116, 37, 114);
+  color: #004256;
+  text-shadow: 3px 3px 3px rgb(137, 137, 137);
   font-style: italic;
   padding: 40px;
 }
 .containerForm .formulario {
-  width: 700px;
+  width: 500px;
   display: flex;
   justify-content: center;
 }
@@ -373,7 +394,7 @@ section .containerIsapres .isapre img:hover {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  border: 8px inset rgba(128, 0, 128, 0.8);
+  border: 8px inset rgba(119, 218, 237, 0.709);
   border-radius: 10px;
 }
 .containerForm .formulario input {
@@ -395,7 +416,7 @@ section .containerIsapres .isapre img:hover {
   color: red;
 }
 .containerMapa .mapa {
-  border: 5px solid black;
+  border: 2px solid black;
   padding: 5px;
   display: flex;
   justify-content: center;
@@ -405,11 +426,111 @@ section .containerIsapres .isapre img:hover {
 }
 
 /* mediaquery Pages */
-@media screen and (max-width: 576px) {
+/* Mediaquery Tablet */
+@media screen and (max-width: 768px) {
+  main {
+    background-color: yellow;
+  }
   /* Header */
   header div nav div div ul li .menu:hover {
     color: rgb(95, 95, 199);
-    background-color: #F5F5F5;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transform: scale(1, 1);
+  }
+  /* Index */
+  section .contenMessage {
+    margin: 30px 30px;
+  }
+  section .contenMessage .message {
+    text-align: justify;
+  }
+  section .stepProcess {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+  /* Servicios */
+  .servicios .containerTerapias {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .servicios .containerTerapias .terapia .headTerapia h2 {
+    margin: 0;
+  }
+  .servicios .containerTerapias .terapia .bodyTerapia {
+    padding: 10px 5px;
+  }
+  .isapres h2 {
+    margin: 0;
+  }
+  .isapres .containerIsapres {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .isapres .containerIsapres .isapre img {
+    width: 75%;
+  }
+  .isapres .containerIsapres :nth-child(8) {
+    grid-column: 3/4;
+  }
+  /* Staff */
+  .staffH1 {
+    margin: 0;
+  }
+  .staffComent {
+    text-align: justify;
+  }
+  .staffComent .msgDesktop {
+    display: none;
+  }
+  .staffComent .msgMobile {
+    display: inline-block;
+    margin: 0;
+  }
+  .containerStaff {
+    display: flex;
+    gap: 25px;
+    margin-inline: 20px;
+  }
+  /* FAQ */
+  .faqH1 {
+    margin: 0;
+  }
+  .containerFaq {
+    width: 100%;
+  }
+  /* Contacto */
+  .containerForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .containerForm .messageForm h2 {
+    margin: 0;
+    padding: 20px;
+  }
+  .containerForm .messageForm p {
+    margin: 0;
+  }
+  .containerMapa {
+    gap: 0;
+  }
+  .containerMapa .consejoMapa p {
+    margin: 0;
+  }
+}
+/* MediaQuery Mobile */
+@media screen and (max-width: 576px) {
+  main {
+    background-color: aqua;
+  }
+  /* Header */
+  header div nav div div ul li .menu:hover {
+    color: rgb(95, 95, 199);
+    background-color: #ffffff;
     border-radius: 5px;
     transform: scale(1, 1);
   }
@@ -426,6 +547,7 @@ section .containerIsapres .isapre img:hover {
     text-align: justify;
   }
   .indexH2 {
+    margin: 20px;
     padding-bottom: 20px;
   }
   section .stepProcess {
@@ -463,12 +585,15 @@ section .containerIsapres .isapre img:hover {
     padding: 10px;
   }
   .isapres .containerIsapres {
-    margin: 0px 20px;
-    padding: 15px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 15px;
     text-align: center;
+  }
+  .isapres .containerIsapres .isapre img {
+    width: 75%;
+  }
+  .isapres .containerIsapres :nth-child(8) {
+    grid-column: 2/3;
   }
   /* Staff */
   .staffComent .msgDesktop {
@@ -483,10 +608,10 @@ section .containerIsapres .isapre img:hover {
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 25px;
   }
   .containerStaff .psicologo {
-    margin-inline: 5px;
+    margin-inline: 15px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -499,8 +624,11 @@ section .containerIsapres .isapre img:hover {
     padding: 10px;
   }
   /* FAQ */
+  .faqH1 {
+    margin: 0;
+  }
   .containerFaq {
-    width: 90%;
+    width: 95%;
   }
 }
 

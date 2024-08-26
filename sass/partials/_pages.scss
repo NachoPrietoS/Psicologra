@@ -10,7 +10,10 @@ main{
 
 /* Estilos Index */
 .indexH1{
-    @include stileTitle($fontRoboto, italic, center, 40px);
+    @include stileTitle($fontRoboto, italic, center, 900);
+    padding: 25px;
+    margin: 0;
+    color: $colorH;
 }
 
 .slide{
@@ -24,11 +27,17 @@ section{
         margin: 50px 60px;
         text-align: center;
         font-size: large;
+        span{
+            color: red;
+            text-decoration: underline;
+            font-weight: 800;
+        }
     }
 }
 
 .indexH2{
-    @include stileTitle($fontRoboto, italic, center, 40px)
+    @include stileTitle($fontRoboto, italic, center, 700);
+    color: $colorH;
 }
 
 section .stepProcess{
@@ -80,7 +89,10 @@ section .stepProcess{
 
 section{
     h1{
-        @include stileTitle($fontRoboto, italic, center, 40px)
+        @include stileTitle($fontRoboto, italic, center, 900);
+        margin: 0;
+        padding: 15px 0 0 0;
+        color: $colorH;
     }
     .containerTerapias{
         margin: 30px 30px;
@@ -135,7 +147,9 @@ section{
 
 section{
     .isapreH2{
-        @include stileTitle($fontRoboto, italic, center, 35px)
+        @include stileTitle($fontRoboto, italic, center, 900);
+        color: $colorH;
+        margin: 0;
     }
     .containerIsapres{
         margin-inline: 20px;
@@ -147,7 +161,7 @@ section{
         .isapre{
             text-align: center;
             img{
-                width: 50%;
+                width: 60%;
                 text-align: center;
                 &:hover{
                     transform: scale(1.2, 1.2);
@@ -159,7 +173,10 @@ section{
 
 /* Estilos Staff */
 .staffH1{
-    @include stileTitle($fontRoboto, italic, center, 40px)
+    @include stileTitle($fontRoboto, italic, center, 900);
+    color: $colorH;
+    margin: 0;
+    padding: 30px 0 0 0;
 }
 
 .staffComent{
@@ -172,6 +189,7 @@ section{
     }
     span{
         color: red;
+        font-weight: 800;
     }
 }
 
@@ -179,7 +197,7 @@ section{
     height: 600px;
     margin-inline: 45px;
     display: flex;
-    gap: 50px;
+    gap: 100px;
     text-align: center;
     .psicologo{
         display: flex;
@@ -214,7 +232,10 @@ section{
 
 /* Estilos FAQ */
 .faqH1{
-    @include stileTitle($fontRoboto, italic, center, 40px)
+    @include stileTitle($fontRoboto, italic, center, 900);
+    color: $colorH;
+    margin: 0;
+    padding: 25px;
 }
 
 .containerVideo{
@@ -228,7 +249,7 @@ section{
 }
 
 .containerFaq{
-    width: 75%;
+    width: 90%;
     padding: 40px;
     margin: auto;
     margin-top: 20px;
@@ -264,9 +285,8 @@ section{
     justify-content: center;
     align-items: center;
     gap: 50px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     .messageForm{
-        background-color: rgb(223, 218, 218);
         width: 500px;
         padding: 20px;
         border-radius: 20px;
@@ -275,14 +295,14 @@ section{
         justify-content: space-evenly;
         text-align: center;
         h2{
-            color: rgb(250, 248, 248);
-            text-shadow: 5px 5px 5px rgb(116, 37, 114);
+            color: $colorH;
+            text-shadow: 3px 3px 3px rgb(137, 137, 137);
             font-style: italic;
             padding: 40px;
         }
     }
     .formulario{
-        width: 700px;
+        width: 500px;
         display: flex;
         justify-content: center;
         form{
@@ -291,7 +311,7 @@ section{
             display: flex;
             flex-direction: column;
             gap: 5px;
-            border: 8px inset rgba(128, 0, 128, 0.8);
+            border: 8px inset rgba(119, 218, 237, 0.709);
             border-radius: 10px;
         }
         input{
@@ -314,7 +334,7 @@ section{
         }
     }
     .mapa{
-        border: 5px solid black;
+        border: 2px solid black;
         padding: 5px;
         display: flex;
         justify-content: center;

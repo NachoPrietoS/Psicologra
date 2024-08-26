@@ -26,7 +26,8 @@ header{
                                 &:hover{
                                     color: rgb(95, 95, 199);
                                     background-color: $secundaryColor;
-                                    border-radius: 25px;
+                                    font-size: larger;
+                                    border-radius: 15px;
                                     transform: scale(1.1, 1.1);
                                 }
                             }
@@ -75,9 +76,9 @@ footer{
                 height: 100%;
                 width: 50%;
                 padding: 0;
+                display: flex;
                 align-content: center;
                 justify-content: space-evenly;
-                display: flex;
                 .RRSS{
                     align-content: center;
                 }

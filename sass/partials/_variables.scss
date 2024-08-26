@@ -6,12 +6,13 @@ $fontRoboto: "Roboto Condensed", sans-serif;
 
 // Colors //
 $primaryColor: #7b5df9;
-$secundaryColor: #F5F5F5;
+$secundaryColor: #ffffff;
+$colorH: #004256;
 
 // Mixin //
 @mixin stileTitle($font, $style, $aling, $size){
     font-family: $font;
     font-style: $style;
     text-align: $aling;
-    font-size: $size;
+    font-weight: $size;
 }
