@@ -30,7 +30,7 @@ section{
         span{
             color: red;
             text-decoration: underline;
-            font-weight: 800;
+            font-weight: 700;
         }
     }
 }
@@ -38,13 +38,14 @@ section{
 .indexH2{
     @include stileTitle($fontRoboto, italic, center, 700);
     color: $colorH;
+    margin-bottom: 15px;
 }
 
 section .stepProcess{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
     column-gap: 15px;
-    padding: 25px 10px;
+    padding: 25px;
     justify-content: space-evenly;
     .step{
         text-align: center;
@@ -189,7 +190,7 @@ section{
     }
     span{
         color: red;
-        font-weight: 800;
+        font-weight: 700;
     }
 }
 
@@ -313,9 +314,19 @@ section{
             gap: 5px;
             border: 8px inset rgba(119, 218, 237, 0.709);
             border-radius: 10px;
+            p{
+                margin: 0;
+            }
         }
         input{
             padding-left: 5px;
+        }
+        .btnSend{
+            margin-top: 10px;
+            background-color: rgba(119, 218, 237, 0.709);
+            &:hover{
+                font-weight: 900;
+            }
         }
     }
 }
@@ -327,10 +338,31 @@ section{
     flex-direction: column;
     gap: 15px;
     .consejoMapa{
-        padding: 25px;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        h3{
+            @include stileTitle($fontRoboto, italic, center, 900);
+            color: $colorH;
+            width: 30%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            width: 50%;
+            margin: 0;
+            padding: 10px;
+        }
         span{
             color: red;
+            font-weight: 700;
+        }
+        .span2{
+            color: red;
+            font-weight: 700;
+            text-decoration: underline;
         }
     }
     .mapa{

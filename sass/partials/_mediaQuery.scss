@@ -1,9 +1,6 @@
 /* mediaquery Pages */
 /* Mediaquery Tablet */
 @media screen and (max-width: 768px){
-    main{
-        background-color: yellow;
-    }
     /* Header */
     header{
         div {
@@ -30,7 +27,7 @@
     /* Index */
     section{
         .contenMessage{
-            margin: 30px 30px;
+            margin: 30px 35px;
             .message{
                 text-align: justify;
             }
@@ -124,10 +121,16 @@
         }
     }
     .containerMapa{
-        gap: 0;
+        gap: 15px;
         .consejoMapa{
+            display: flex;
+            flex-direction: column;
+            h3{
+                width: 100%;
+            }
             p{
                 margin: 0;
+                width: 100%;
             }
         }
     }
@@ -137,9 +140,6 @@
 
 /* MediaQuery Mobile */
 @media screen and (max-width: 576px) {
-    main{
-        background-color: aqua;
-    }
     /* Header */
     header{
         div {

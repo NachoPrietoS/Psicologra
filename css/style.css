@@ -122,7 +122,7 @@ section .contenMessage {
 section .contenMessage span {
   color: red;
   text-decoration: underline;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .indexH2 {
@@ -131,13 +131,14 @@ section .contenMessage span {
   text-align: center;
   font-weight: 700;
   color: #004256;
+  margin-bottom: 15px;
 }
 
 section .stepProcess {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   column-gap: 15px;
-  padding: 25px 10px;
+  padding: 25px;
   justify-content: space-evenly;
 }
 section .stepProcess .step {
@@ -278,7 +279,7 @@ section .containerIsapres .isapre img:hover {
 }
 .staffComent span {
   color: red;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .containerStaff {
@@ -397,8 +398,18 @@ section .containerIsapres .isapre img:hover {
   border: 8px inset rgba(119, 218, 237, 0.709);
   border-radius: 10px;
 }
+.containerForm .formulario form p {
+  margin: 0;
+}
 .containerForm .formulario input {
   padding-left: 5px;
+}
+.containerForm .formulario .btnSend {
+  margin-top: 10px;
+  background-color: rgba(119, 218, 237, 0.709);
+}
+.containerForm .formulario .btnSend:hover {
+  font-weight: 900;
 }
 
 .containerMapa {
@@ -409,11 +420,35 @@ section .containerIsapres .isapre img:hover {
   gap: 15px;
 }
 .containerMapa .consejoMapa {
-  padding: 25px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.containerMapa .consejoMapa h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: italic;
+  text-align: center;
+  font-weight: 900;
+  color: #004256;
+  width: 30%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerMapa .consejoMapa p {
+  width: 50%;
+  margin: 0;
+  padding: 10px;
 }
 .containerMapa .consejoMapa span {
   color: red;
+  font-weight: 700;
+}
+.containerMapa .consejoMapa .span2 {
+  color: red;
+  font-weight: 700;
+  text-decoration: underline;
 }
 .containerMapa .mapa {
   border: 2px solid black;
@@ -428,9 +463,6 @@ section .containerIsapres .isapre img:hover {
 /* mediaquery Pages */
 /* Mediaquery Tablet */
 @media screen and (max-width: 768px) {
-  main {
-    background-color: yellow;
-  }
   /* Header */
   header div nav div div ul li .menu:hover {
     color: rgb(95, 95, 199);
@@ -440,7 +472,7 @@ section .containerIsapres .isapre img:hover {
   }
   /* Index */
   section .contenMessage {
-    margin: 30px 30px;
+    margin: 30px 35px;
   }
   section .contenMessage .message {
     text-align: justify;
@@ -516,17 +548,22 @@ section .containerIsapres .isapre img:hover {
     margin: 0;
   }
   .containerMapa {
-    gap: 0;
+    gap: 15px;
+  }
+  .containerMapa .consejoMapa {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerMapa .consejoMapa h3 {
+    width: 100%;
   }
   .containerMapa .consejoMapa p {
     margin: 0;
+    width: 100%;
   }
 }
 /* MediaQuery Mobile */
 @media screen and (max-width: 576px) {
-  main {
-    background-color: aqua;
-  }
   /* Header */
   header div nav div div ul li .menu:hover {
     color: rgb(95, 95, 199);
