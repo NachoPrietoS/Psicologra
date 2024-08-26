@@ -105,7 +105,7 @@ main {
   font-weight: 900;
   padding: 25px;
   margin: 0;
-  color: #004256;
+  color: #2bbce8;
 }
 
 .slide {
@@ -120,7 +120,7 @@ section .contenMessage {
   font-size: large;
 }
 section .contenMessage span {
-  color: red;
+  color: #2bbce8;
   text-decoration: underline;
   font-weight: 700;
 }
@@ -130,7 +130,7 @@ section .contenMessage span {
   font-style: italic;
   text-align: center;
   font-weight: 700;
-  color: #004256;
+  color: #2bbce8;
   margin-bottom: 15px;
 }
 
@@ -184,7 +184,7 @@ section h1 {
   font-weight: 900;
   margin: 0;
   padding: 15px 0 0 0;
-  color: #004256;
+  color: #2bbce8;
 }
 section .containerTerapias {
   margin: 30px 30px;
@@ -235,7 +235,7 @@ section .isapreH2 {
   font-style: italic;
   text-align: center;
   font-weight: 900;
-  color: #004256;
+  color: #2bbce8;
   margin: 0;
 }
 section .containerIsapres {
@@ -263,22 +263,28 @@ section .containerIsapres .isapre img:hover {
   font-style: italic;
   text-align: center;
   font-weight: 900;
-  color: #004256;
+  color: #2bbce8;
   margin: 0;
   padding: 30px 0 0 0;
 }
 
 .staffComent {
   margin: 30px;
-  text-align: center;
   font-size: large;
   font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.staffComent .msgDesktop {
+  width: 85%;
+  text-align: center;
 }
 .staffComent .msgMobile {
   display: none;
 }
 .staffComent span {
-  color: red;
+  color: #2bbce8;
   font-weight: 700;
 }
 
@@ -310,6 +316,9 @@ section .containerIsapres .isapre img:hover {
   font-size: large;
   text-decoration: underline;
 }
+.containerStaff .psicologo .msgPsico p {
+  margin: 20px;
+}
 
 /* Estilos FAQ */
 .faqH1 {
@@ -317,7 +326,7 @@ section .containerIsapres .isapre img:hover {
   font-style: italic;
   text-align: center;
   font-weight: 900;
-  color: #004256;
+  color: #2bbce8;
   margin: 0;
   padding: 25px;
 }
@@ -379,10 +388,12 @@ section .containerIsapres .isapre img:hover {
   text-align: center;
 }
 .containerForm .messageForm h2 {
-  color: #004256;
+  color: #2bbce8;
   text-shadow: 3px 3px 3px rgb(137, 137, 137);
+  font-weight: 700;
   font-style: italic;
-  padding: 40px;
+  padding: 20px;
+  margin: 0;
 }
 .containerForm .formulario {
   width: 500px;
@@ -429,7 +440,7 @@ section .containerIsapres .isapre img:hover {
   font-style: italic;
   text-align: center;
   font-weight: 900;
-  color: #004256;
+  color: #2bbce8;
   width: 30%;
   margin: 0;
   display: flex;
@@ -442,11 +453,11 @@ section .containerIsapres .isapre img:hover {
   padding: 10px;
 }
 .containerMapa .consejoMapa span {
-  color: red;
+  color: #2bbce8;
   font-weight: 700;
 }
 .containerMapa .consejoMapa .span2 {
-  color: red;
+  color: #2bbce8;
   font-weight: 700;
   text-decoration: underline;
 }

@@ -28,7 +28,7 @@ section{
         text-align: center;
         font-size: large;
         span{
-            color: red;
+            color: $colorH;
             text-decoration: underline;
             font-weight: 700;
         }
@@ -182,14 +182,20 @@ section{
 
 .staffComent{
     margin: 30px;
-    text-align: center;
     font-size: large;
     font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .msgDesktop{
+        width: 85%;
+        text-align: center;
+    }
     .msgMobile{
         display: none;
     }
     span{
-        color: red;
+        color: $colorH;
         font-weight: 700;
     }
 }
@@ -226,6 +232,12 @@ section{
                     font-size: large;
                     text-decoration: underline;
                 }
+            }
+            
+        }
+        .msgPsico{
+            p{
+                margin: 20px
             }
         }
     }
@@ -298,8 +310,10 @@ section{
         h2{
             color: $colorH;
             text-shadow: 3px 3px 3px rgb(137, 137, 137);
+            font-weight: 700;
             font-style: italic;
-            padding: 40px;
+            padding: 20px;
+            margin: 0;
         }
     }
     .formulario{
@@ -356,11 +370,11 @@ section{
             padding: 10px;
         }
         span{
-            color: red;
+            color: $colorH;
             font-weight: 700;
         }
         .span2{
-            color: red;
+            color: $colorH;
             font-weight: 700;
             text-decoration: underline;
         }
