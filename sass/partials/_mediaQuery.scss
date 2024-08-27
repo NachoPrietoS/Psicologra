@@ -282,4 +282,34 @@
     .containerFaq{
         width: 95%;
     }
+
+    /* Footer */
+    footer{
+        height: 80px;
+        .containerFooter{
+            display: flex;
+            flex-direction: column;
+            .derechos{
+                height: 50%;
+                font-size: smaller;
+                align-items: end;
+            }
+            .redesSociales{
+                width: 75%;
+                height: 75%;
+                ul{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    li{
+                        .RRSS{
+                            img{
+                                width: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

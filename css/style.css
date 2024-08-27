@@ -40,50 +40,55 @@ footer {
   font-style: italic;
   font-size: large;
   color: #ffffff;
-  height: 80px;
   width: 100%;
+  height: 65px;
   display: flex;
 }
-footer .row {
+footer .containerFooter {
   width: 100%;
   height: 100%;
+  display: flex;
   align-items: center;
   justify-content: space-around;
-  display: flex;
 }
-footer .row .derechos {
-  justify-content: center;
+footer .containerFooter .derechos {
+  width: 50%;
   height: 100%;
   display: flex;
-}
-footer .row .derechos p {
-  height: 100%;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
-footer .row .redesSociales {
+footer .containerFooter .derechos p {
+  margin: 0;
+}
+footer .containerFooter .redesSociales {
   height: 100%;
-  width: 100%;
+  width: 50%;
   padding: 0;
   display: flex;
   align-content: center;
   justify-content: center;
 }
-footer .row .redesSociales ul {
+footer .containerFooter .redesSociales ul {
+  margin: 0;
   height: 100%;
   width: 50%;
   padding: 0;
   display: flex;
   align-content: center;
   justify-content: space-evenly;
+  align-items: center;
 }
-footer .row .redesSociales ul .RRSS {
+footer .containerFooter .redesSociales ul li {
+  list-style: none;
+}
+footer .containerFooter .redesSociales ul li .RRSS {
   align-content: center;
 }
-footer .row .redesSociales ul img {
-  width: 35px;
+footer .containerFooter .redesSociales ul li .RRSS img {
+  width: 30px;
 }
-footer .row .redesSociales ul img:hover {
+footer .containerFooter .redesSociales ul li .RRSS img:hover {
   transform: scale(1.2, 1.2);
 }
 
@@ -677,6 +682,31 @@ section .containerIsapres .isapre img:hover {
   }
   .containerFaq {
     width: 95%;
+  }
+  /* Footer */
+  footer {
+    height: 80px;
+  }
+  footer .containerFooter {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .containerFooter .derechos {
+    height: 50%;
+    font-size: smaller;
+    align-items: end;
+  }
+  footer .containerFooter .redesSociales {
+    width: 75%;
+    height: 75%;
+  }
+  footer .containerFooter .redesSociales ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .containerFooter .redesSociales ul li .RRSS img {
+    width: 30px;
   }
 }
 
