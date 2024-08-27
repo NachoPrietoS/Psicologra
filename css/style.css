@@ -378,27 +378,31 @@ section .containerIsapres .isapre img:hover {
   height: auto;
   padding: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 50px;
   flex-wrap: nowrap;
 }
 .containerForm .messageForm {
   width: 500px;
-  padding: 20px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
 }
-.containerForm .messageForm h2 {
+.containerForm .messageForm .heart img {
+  width: 200px;
+  padding-bottom: 25px;
+}
+.containerForm .messageForm .msgHeart h2 {
   color: #2bbce8;
-  text-shadow: 3px 3px 3px rgb(137, 137, 137);
-  font-weight: 700;
+  font-weight: 900;
   font-style: italic;
   padding: 20px;
   margin: 0;
+}
+.containerForm .messageForm .msgHeart p {
+  font: bold;
 }
 .containerForm .formulario {
   width: 500px;
@@ -556,12 +560,17 @@ section .containerIsapres .isapre img:hover {
     flex-wrap: wrap;
     gap: 10px;
   }
-  .containerForm .messageForm h2 {
+  .containerForm .messageForm {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .containerForm .messageForm .msgHeart h2 {
     margin: 0;
     padding: 20px;
   }
-  .containerForm .messageForm p {
+  .containerForm .messageForm .msgHeart p {
     margin: 0;
+    padding-bottom: 25px;
   }
   .containerMapa {
     gap: 15px;

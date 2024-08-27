@@ -295,26 +295,35 @@ section{
     height: auto;
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 50px;
     flex-wrap: nowrap;
     .messageForm{
         width: 500px;
-        padding: 20px;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         text-align: center;
-        h2{
-            color: $colorH;
-            text-shadow: 3px 3px 3px rgb(137, 137, 137);
-            font-weight: 700;
-            font-style: italic;
-            padding: 20px;
-            margin: 0;
+        .heart{
+            img{
+                width: 200px;
+                padding-bottom: 25px;
+            }
         }
+        .msgHeart{
+            h2{
+                color: $colorH;
+                font-weight: 900;
+                font-style: italic;
+                padding: 20px;
+                margin: 0;
+            }
+            p{
+                font: bold;
+            }
+        }
+        
     }
     .formulario{
         width: 500px;
