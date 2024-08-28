@@ -124,10 +124,14 @@ section .contenMessage {
   text-align: center;
   font-size: large;
 }
-section .contenMessage span {
+section .contenMessage p a {
+  font-style: italic;
+  font-weight: 800;
   color: #2bbce8;
-  text-decoration: underline;
-  font-weight: 700;
+}
+section .contenMessage p span {
+  color: #2bbce8;
+  font-weight: 600;
 }
 
 .indexH2 {
@@ -139,38 +143,59 @@ section .contenMessage span {
   margin-bottom: 15px;
 }
 
-section .stepProcess {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  column-gap: 15px;
+.stepProcess {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
   padding: 25px;
-  justify-content: space-evenly;
 }
-section .stepProcess .step {
-  text-align: center;
-  border-radius: 40px;
-  background-color: rgba(220, 245, 250, 0.709);
+.stepProcess .card {
+  background-color: #F2EFFE;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 25px;
+}
+.stepProcess .card .face {
+  background-color: #EFF8FF;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.stepProcess .card .front {
+  transform: perspective(600px) rotateY(0deg);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 25px;
-  box-shadow: -5px -5px 5px #888888;
 }
-section .stepProcess .step .stepNumber h5 {
-  font-size: medium;
-  color: #4b389c;
+.stepProcess .card .back {
+  transform: perspective(600px) rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  border-radius: 30px;
-  border-color: #4b389c;
-  border-style: solid;
-  padding: 10px;
 }
-section .stepProcess .step .stepAction h6 {
-  font-size: large;
-  color: #4b389c;
-  text-decoration: underline;
-  margin: 0;
+.stepProcess .card .back p {
+  margin: 0 10px;
+}
+.stepProcess .card .back p .linkCard {
   font-style: italic;
+  font-weight: 800;
+  color: #2bbce8;
+}
+.stepProcess .card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+.stepProcess .card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
 }
 
 /* Estilos Servicios */
@@ -401,8 +426,10 @@ section .containerIsapres .isapre img:hover {
   padding: 20px;
   margin: 0;
 }
-.containerForm .messageForm .msgHeart p {
-  font: bold;
+.containerForm .messageForm .msgHeart p .textLink {
+  font-style: italic;
+  font-weight: 800;
+  color: #2bbce8;
 }
 .containerForm .formulario {
   width: 500px;
@@ -465,11 +492,6 @@ section .containerIsapres .isapre img:hover {
   color: #2bbce8;
   font-weight: 700;
 }
-.containerMapa .consejoMapa .span2 {
-  color: #2bbce8;
-  font-weight: 700;
-  text-decoration: underline;
-}
 .containerMapa .mapa {
   border: 2px solid black;
   padding: 5px;
@@ -480,15 +502,44 @@ section .containerIsapres .isapre img:hover {
   width: 90%;
 }
 
+/* Animista */
+.rotate-vert-center {
+  -webkit-animation: rotate-vert-center 1s ease-in-out 2 both;
+  animation: rotate-vert-center 1s ease-in-out 2 both;
+}
+
+@-webkit-keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
 /* mediaquery Pages */
 /* Mediaquery Tablet */
 @media screen and (max-width: 768px) {
   /* Header */
+  header div nav div div ul li .menu {
+    padding-left: 5px;
+  }
   header div nav div div ul li .menu:hover {
     color: rgb(95, 95, 199);
     background-color: #ffffff;
     border-radius: 5px;
-    transform: scale(1, 1);
+    transform: scale(1);
   }
   /* Index */
   section .contenMessage {
@@ -497,11 +548,9 @@ section .containerIsapres .isapre img:hover {
   section .contenMessage .message {
     text-align: justify;
   }
-  section .stepProcess {
-    margin: 0 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 45px;
+  .stepProcess {
+    height: auto;
+    padding-bottom: 10px;
   }
   /* Servicios */
   .servicios .containerTerapias {
@@ -590,6 +639,9 @@ section .containerIsapres .isapre img:hover {
 /* MediaQuery Mobile */
 @media screen and (max-width: 576px) {
   /* Header */
+  header div nav div div ul li .menu {
+    padding-left: 5px;
+  }
   header div nav div div ul li .menu:hover {
     color: rgb(95, 95, 199);
     background-color: #ffffff;
@@ -612,24 +664,16 @@ section .containerIsapres .isapre img:hover {
     margin: 20px;
     padding-bottom: 20px;
   }
-  section .stepProcess {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 30%);
-    row-gap: 25px;
-    margin: 0 55px;
-    padding: 5px 0 25px 0;
-  }
-  section .stepProcess .step {
-    padding: 25px;
-  }
-  section .stepProcess .step .stepNumber h6 {
-    padding: 10px;
-    margin: 5px;
+  .stepProcess {
+    height: auto;
   }
   /* Servicios */
   .servicios {
     height: 920px;
+    padding-bottom: 15px;
+  }
+  .servicios h1 {
+    padding-bottom: 15px;
   }
   .servicios .containerTerapias {
     margin: 0 25px;
@@ -646,10 +690,14 @@ section .containerIsapres .isapre img:hover {
   .servicios .containerTerapias .terapia .bodyTerapia {
     padding: 10px;
   }
+  .servicios .containerTerapias .terapia .bodyTerapia .btnReserva button:hover {
+    transform: scale(1, 1);
+  }
   .isapres .containerIsapres {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
+    padding: 25px 0;
   }
   .isapres .containerIsapres .isapre img {
     width: 75%;
@@ -702,6 +750,7 @@ section .containerIsapres .isapre img:hover {
   }
   footer .containerFooter .derechos {
     height: 50%;
+    width: 100%;
     font-size: smaller;
     align-items: end;
   }
