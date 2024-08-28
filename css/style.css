@@ -606,6 +606,9 @@ section .containerIsapres .isapre img:hover {
   .containerFaq details .question:hover {
     font-size: medium;
   }
+  .containerFaq details .answer {
+    text-align: justify;
+  }
   /* Contacto */
   .containerForm {
     display: flex;
